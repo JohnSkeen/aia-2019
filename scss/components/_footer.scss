@@ -1,0 +1,53 @@
+/*===========================================
+   Footer Styles
+===========================================*/
+
+footer {
+  background-color: $nichiha-blue;
+}
+
+.footer-info {
+
+  @include mq(medium) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  @include mq(large) {
+    width: 73%;
+  }
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: $white;
+}
+
+.footer-info p {
+  color: $white;
+  font-weight: $font-weight--regular;
+  font-size: em(12px);
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 0 20px 30px 20px;
+  margin-bottom: 0;
+
+  @include mq(medium) {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.footer-info svg {
+  display: block;
+  padding: 25px 0;
+  margin: 0 auto;
+
+  @include mq(medium) {
+    margin: 0 0 0 auto;
+    order: 2;
+  }
+}
