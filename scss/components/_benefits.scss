@@ -41,6 +41,10 @@
   }
 }
 
+.benefit-option svg {
+  height: 74px;
+}
+
 .benefit-option:first-child {
   @include mq(medium) {
     padding-left: 0;

@@ -512,6 +512,9 @@ header {
   .benefit-option {
     padding: 0 15px; } }
 
+.benefit-option svg {
+  height: 74px; }
+
 @media (min-width: 769px) {
   .benefit-option:first-child {
     padding-left: 0; } }
