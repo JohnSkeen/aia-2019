@@ -142,7 +142,7 @@ body {
 }
 
 .form-container h2 {
-  padding: 20px 10px 15px 10px;
+  padding: 20px 45px 15px 45px;
 }
 
 .rule-p {
@@ -150,8 +150,12 @@ body {
   padding: 0 10px;
 
   @include mq(medium) {
-    padding: 20px 20px;
+    padding: 20px 45px;
   }
+}
+
+.form {
+  padding: 0 45px;
 }
 
 #btn {
