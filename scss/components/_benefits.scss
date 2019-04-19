@@ -35,6 +35,24 @@
   }
 }
 
+.benefit-option {
+  @include mq(medium) {
+    padding: 0 15px;
+  }
+}
+
+.benefit-option:first-child {
+  @include mq(medium) {
+    padding-left: 0;
+  }
+}
+
+.benefit-option:last-child {
+  @include mq(medium) {
+    padding-right: 0;
+  }
+}
+
 .benefit-option svg {
   padding-top: 40px;
 }
