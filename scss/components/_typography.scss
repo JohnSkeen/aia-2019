@@ -1,32 +1,55 @@
 h1 {
   color: $white;
-  font-size: em(50px);
+  font-size: em(32px);
   font-weight: $font-weight--medium;
   letter-spacing: 0.04em;
   line-height: 1.28;
+
+  @include mq(medium) {
+    font-size: em(40px);
+  }
+  @include mq(large) {
+    font-size: em(50px);
+  }
 }
 
 h2 {
   color: $nichiha-blue;
-  font-size: em(34px);
+  font-size: em(24px);
   font-weight: $font-weight--semi-bold;
   letter-spacing: 0.02em;
   line-height: 1.47;
+
+  @include mq(medium) {
+    font-size: em(24px);
+  }
+  @include mq(large) {
+    font-size: em(34px);
+  }
 }
 
 h3 {
   color: $river-bed;
-  font-size: em(30px);
+  font-size: em(20px);
   font-weight: $font-weight--regular;
   letter-spacing: 0.03em;
+  @include mq(medium) {
+    font-size: em(24px);
+  }
+  @include mq(large) {
+    font-size: em(30px);
+  }
 }
 
 h4 {
   color: $nichiha-blue;
-  font-size: em(14px);
+  font-size: em(12px);
   font-weight: $font-weight--semi-bold;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  @include mq(medium) {
+    font-size: em(14px);
+  }
 }
 
 h5 {
@@ -39,26 +62,38 @@ h5 {
 
 .event-header p {
   color: $white;
-  font-size: em(20px);
+  font-size: em(16px);
   font-weight: $font-weight--regular;
   letter-spacing: 0.04em;
   line-height: 1.75;
+  @include mq(medium) {
+    font-size: em(18px);
+  }
+  @include mq(large) {
+    font-size: em(20px);
+  }
 }
 
 .apple-watch p {
   color: $oslo-grey;
-  font-size: em(14px);
+  font-size: em(12px);
   font-weight: $font-weight--regular;
   letter-spacing: 0.03em;
   line-height: 1.71;
+  @include mq(medium) {
+    font-size: em(14px);
+  }
 }
 
 .benefit-option p {
   color: $oslo-grey;
-  font-size: em(16px);
+  font-size: em(12px);
   font-weight: $font-weight--regular;
   letter-spacing: 0.03em;
   line-height: 1.625;
+  @include mq(medium) {
+    font-size: em(16px);
+  }
 }
 
 .rule-p {
