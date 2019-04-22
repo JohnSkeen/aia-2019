@@ -5,6 +5,10 @@
 .benefits {
   background-color: $athens-grey;
   padding-bottom: 165px;
+  margin-top: -150px;
+  @include mq(medium) {
+    margin-top: 0;
+  }
 
 }
 
