@@ -19,10 +19,14 @@ footer {
   @include mq(large) {
     width: 73%;
   }
+
+  @include mq(xxlarge) {
+    width: 50%;
+  }
 }
 
 .footer-info a {
-  text-decoration: none;
+  text-decoration: underline;
   color: $white;
 }
 

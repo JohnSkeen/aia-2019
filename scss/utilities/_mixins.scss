@@ -30,6 +30,11 @@
       @content;
     }
   }
+  @else if $break == "xxlarge" {
+    @media(min-width: $brkpoint-xxlg) {
+      @content;
+    }
+  }
   @else {
     @error "'#{$break}' is not a valid entry."
   }

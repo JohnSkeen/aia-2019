@@ -4,10 +4,17 @@
 
 .benefits {
   background-color: $athens-grey;
-  padding-bottom: 165px;
-  margin-top: -150px;
+  padding-bottom: 100px;
+  margin-top: -600px;
+  padding-top: 600px;
   @include mq(medium) {
+    padding-top: 0;
     margin-top: 0;
+  }
+
+  @include mq(xxlarge) {
+    margin-top: -500px;
+    padding-top: 500px;
   }
 
 }
@@ -17,6 +24,9 @@
   margin: 0 auto;
   @include mq(medium) {
     width: 73%;
+  }
+  @include mq(xxlarge) {
+    width: 50%;
   }
 }
 
@@ -46,7 +56,7 @@
 }
 
 .benefit-option svg {
-  height: 74px;
+  height: 50px;
 }
 
 .benefit-option:first-child {
