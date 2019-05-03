@@ -4,14 +4,14 @@
 
 body {
   border-top: 6px solid $nichiha-blue;
-  background: url('../images/header-image.png') no-repeat top center;
+  background: url('https://storage.pardot.com/65302/181196/header_image.png') no-repeat top center;
   background-size: auto;
   background-color: $athens-grey;
   margin: 0 auto;
   font-family: $font-stack-primary;
 
   @include mq(xxlarge) {
-    background: url('../images/headerimage.jpg') no-repeat top center;
+    background: url('https://storage.pardot.com/65302/181198/headerimage.jpg') no-repeat top center;
   }
 }
 
@@ -63,13 +63,18 @@ body {
   }
 
   @include mq(large) {
-    margin-top: -160px;
+    margin-top: -210px;
   }
 
   @include mq(xlarge) {
-    margin-top: -140px;
     padding-right: 100px;
   }
+
+  @include mq(xxlarge) {
+    margin-top: -110px;
+    padding-right: 100px;
+  }
+
 }
 
 .header-border {
@@ -87,12 +92,16 @@ body {
 .form-container {
   position: relative;
   margin: 40px 0;
-  height: 1050px;
+  height: 1150px;
   width: 90%;
 
   @include mq(smallform) {
     margin: 40px auto;
     width: 80%;
+  }
+
+  @include mq(medium) {
+    height: 1250px;
   }
 
   @include mq(large) {
@@ -118,7 +127,7 @@ body {
 .bluebox {
   border: 8px solid $nichiha-blue;
   position: absolute;
-  height: 1034px;
+  height: 1134px;
   width: calc(100% - 16px);
   top: -30px;
   right: -30px;
@@ -128,8 +137,12 @@ body {
     width: calc(100% - 16px);
   }
 
+  @include mq(medium) {
+    height: 1234px;
+  }
+
   @include mq(large) {
-    height: 1020px;
+    height: 1220px;
     width: calc(100% - 30px);
     border: 15px solid $nichiha-blue;
     top: -55px;
@@ -161,10 +174,16 @@ body {
 }
 
 .form {
-  padding: 0 45px;
+  padding: 0 20px;
+  margin-left: -11px;
+
+  @include mq(medium) {
+    padding: 0 45px;
+  }
 }
 
-#btn {
+#btn,
+#rules {
   background:none!important;
   color:inherit;
   border:none;
